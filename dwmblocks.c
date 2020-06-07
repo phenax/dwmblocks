@@ -46,10 +46,14 @@ void getcmd(const Block *block, char *output)
 		return;
 	char c;
 	int i = strlen(block->icon);
+  output[i++] = ' ';
 	fgets(output+i, CMDLENGTH-i, cmdf);
 	i = strlen(output);
-	if (delim != '\0' && --i)
+	if (delim != '\0' && --i) {
+    output[i++] = ' ';
 		output[i++] = delim;
+    output[i++] = ' ';
+  }
 	output[i++] = '\0';
 	pclose(cmdf);
 }
