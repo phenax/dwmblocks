@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+BLOCKDATA=$(echo -e "
+volume         10
+music          11
+brightness     12
+" | sed '/^$/d');
+
+block=$1;
+
+[[ -z "$block" ]] && echo "Specify the block to update" && exit 1;
+
+statuscode=$(echo -e "$BLOCKDATA" | awk "/^$block / {print \$2}" | head -n 1);
+
+[[ -z "$statuscode" ]] && echo "Block not found" && exit 1;
+
+pkill -RTMIN+$statuscode dwmblocks;
+
