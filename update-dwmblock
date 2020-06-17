@@ -4,6 +4,7 @@ BLOCKDATA=$(echo -e "
 volume         10
 music          11
 brightness     12
+keymode        13
 " | sed '/^$/d');
 
 block=$1;
