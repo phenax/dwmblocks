@@ -7,6 +7,7 @@ static const Block blocks[] = {
   {"", "~/scripts/menuitems.sh brightness",         0,   12},
   {"", "~/scripts/menuitems.sh date",               5,   0},
   {"", "~/scripts/menuitems.sh battery",            10,  0},
+  {"", "~/scripts/menuitems.sh network",            10,  0},
 };
 
 //sets delimeter between status commands. NULL character ('\0') means no delimeter.
