@@ -3,7 +3,7 @@
 static const Block blocks[] = {
   /*Icon*/ /*Command*/       /*Interval*/ /*Signal*/
   {"", MENUITEM(volume),             10,      10},
-  {"", MENUITEM(network),            10,      12},
+  {"", MENUITEM(network),            10,      14},
   {"", MENUITEM(date),               5,       0},
   {"", MENUITEM(battery),            10,      0},
   // {"", MENUITEM(keymode),            0,      13},

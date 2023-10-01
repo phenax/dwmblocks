@@ -5,6 +5,7 @@ volume         10
 music          11
 brightness     12
 keymode        13
+network        14
 " | sed '/^$/d');
 
 block=$1;
