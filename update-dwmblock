@@ -7,6 +7,7 @@
 BLOCKDATA=$(echo -e "
 volume         10
 network        14
+music          11
 " | sed '/^$/d');
 
 block=$1;
